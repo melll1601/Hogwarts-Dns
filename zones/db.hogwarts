@@ -1,0 +1,17 @@
+$TTL 604800
+
+@   IN  SOA    ns.hogwarts.edu. admin.hogwarts.edu. (
+    2026021601  ;Serial
+    604800      ; Refresh
+    86400       ; Retry
+    2419200     ; Expire
+    604800      ; Negative Cache TTL
+)
+
+@   IN  NS  ns.hogwarts.edu.
+
+ns                 IN   A       192.168.1.10
+great-hall         IN   A       192.168.1.20
+dumbledore-office  IN   A       192.168.1.30
+hermione-granger   IN   A       192.168.1.40
+library            IN   CNAME   hermione-granger.hogwarts.edu.

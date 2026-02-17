@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  bind9:
+    build: .
+    container_name: srv-dns
+    restart: always
+    ports:
+      - "53:53/udp"
+      - "53:53/tcp"
+    environment:
+      - BIND9_USER=bind9
+    volumes:
+      - ./config/named.conf.local:/etc/bind/named.conf.local
+      - ./zones:/etc/bind/zones

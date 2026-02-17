@@ -1,0 +1,14 @@
+$TTL 604800
+@   IN  SOA     ns.gringotts.com. admin.gringotts.com. (
+    2026021601  ; Serial
+    64800       ; Refresh
+    86400       ; Retry
+    2419200     ; Expire
+    604800      ; Negative Cache TTL
+)
+
+@   IN  NS  ns.gringotts.com.
+
+ns                IN  A   192.168.3.10
+vault-713         IN  A   192.168.3.20
+dragon-security   IN  A     192.168.3.30

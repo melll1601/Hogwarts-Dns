@@ -1,0 +1,17 @@
+zone "gringotts.com"{
+
+    type master;
+    file "/etc/bind/zones/db.gringotts";
+};
+
+zone "hogwarts.edu"{
+
+    type master;
+    file "/etc/bind/zones/db.hogwarts";
+};
+
+zone "ministryofmagic.gov.uk"{
+
+    type master;
+    file "/etc/bind/zones/db.ministryofmagic";
+};
